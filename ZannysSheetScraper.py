@@ -28,6 +28,8 @@ for index, row in df.iterrows():
     profile = row['Profile Link'].split('=')[1]
     if stat == "Under":
         stat = "Under 2K"
+    if stat == "200k-":
+        stat = "200k- 2.5m"
     json= '''       
         "life_current": 0,
         "life_maximum": 0,
