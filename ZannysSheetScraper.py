@@ -21,6 +21,7 @@ startchar = ""
 file1.writelines("{")
 
 df = pd.read_csv('dataset.csv',header=1)
+df = df.dropna(thresh=4)
 
 for index, row in df.iterrows():
     membername = row.Name
